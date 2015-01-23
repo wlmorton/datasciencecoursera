@@ -1,0 +1,41 @@
+With larger datasets - > tabular data
+
+read help page for read.table!!!!!
+
+rough calculation of the size of the data set. need to know RAM
+
+set comment.char = "" if there are no comments in the file.
+
+Use colclasses argument. 
+
+Need to know when handling large data sets
+
+- How much memory is available
+- What other apps are in use
+- Are there other users logged into the same system
+- What OS
+- Is the OS 32 or 64 bit
+
+Calculating memory rows x columns x 8 bytes
+
+= r X C X 8 / 2^20   bytes/MB
+
+= #MB
+
+= #MB/1000
+
+= # GB
+
+rule of thumb 2X the database
+
+Textual formats
+
+- dumping and dputing (contains metadata /dont need to know the classes) are useful because the resulting textual format is edit-able
+- Unlike writing out a table or csv file, dump and dput preserve the metadata (sacrificing some readability)
+- also useful when using version control like git so you can track changes better
+- Unix philosophy - store all kinds of data in text
+- downside not very space efficient
+
+dput essential writes R code and recontruscts an R object.
+
+
